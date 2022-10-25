@@ -1,0 +1,5 @@
+phrase = input('Введи фразу: ')
+phrase_list = phrase.split()
+phrase_list.sort()
+new_str = ' '.join(phrase_list)
+print(new_str)
