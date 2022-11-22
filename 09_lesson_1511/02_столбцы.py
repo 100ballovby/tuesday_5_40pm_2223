@@ -10,5 +10,3 @@ for line in range(n):  # перебираю строки матрицы
     for elem in range(m):  # перебираю элементы внутри строки
         print(matrix[elem][line], end=' ')
     print()
-
-
