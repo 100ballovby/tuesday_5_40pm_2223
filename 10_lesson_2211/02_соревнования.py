@@ -13,3 +13,18 @@
 import random as r
 n = int(input('кол-во команд: '))
 m = 5
+
+matrix = []
+priz = []
+for i in range(n):
+    line = []
+    for j in range(m):
+        line.append(r.randint(0, 20))  # наполняю очки команж
+    print(line)
+    priz.append(sum(line))  # посчитать сумму всех очков команды и записать ее в список с призовыми местами
+    matrix.append(line)
+print(priz)
+priz.sort()  # призовые места сортирую по возрастанию
+priz.reverse()  # разворачиваю (сортирую по убыванию)
+for i in range(3):  # вывожу первые 3 места
+    print(f'{i + 1} место, {priz[i]} очков')
