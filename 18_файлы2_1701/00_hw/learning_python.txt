@@ -1,0 +1,5 @@
+In Python you can concatenate strings
+In Python you can reverse the list
+In Python you can sort the list
+In Python you can make an abstract class
+In Python you can use dictionaries like a structures
