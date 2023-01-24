@@ -32,7 +32,12 @@ def dict_to_json(obj, filename):
 
 
 def json_to_dict(file):
-    with open(file, "r"):
+    with open(file, "r") as json_file:
+        dict = json.load(json_file)  # читаю файл, трансформирую содержимое в словарь и сохраняю в переменной
+    return dict
 
 
+dict_to_json(data, "employees.json")  # превращаю словарь Python в JSON
+res = json_to_dict("employees.json")  # превращаю JSON в словарь Python
+print(type(res))
 
