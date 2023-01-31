@@ -36,4 +36,10 @@ for task in result:
 
 print(users_tasks)
 
+users = {}
+for user in result_2:
+    users[user["id"]] = user["name"]
+
+print(users)
+
 
