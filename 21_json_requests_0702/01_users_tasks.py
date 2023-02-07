@@ -35,6 +35,11 @@ for u in users:
     usernames[u["id"]] = u["name"]
 
 print(usernames)
+for key in tasks_per_user.keys():
+    print(f"User: {usernames[key]}:")
+    print(f"Completed: {tasks_per_user[key]['completed']} tasks;")
+    print(f"Didn't completed: {tasks_per_user[key]['not_completed']} tasks.")
+    print()
 
 
 
